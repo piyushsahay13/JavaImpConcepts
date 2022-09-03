@@ -15,8 +15,7 @@ class Thread2 extends Thread
 	@Override
 	public void run()
 	{
-		// taking object lock of s2
-		// enters into test2 method
+		System.out.println("t2 call test1 locking object s2");
 		s2.test1(s1);
 	}
 }
